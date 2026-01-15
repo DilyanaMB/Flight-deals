@@ -10,7 +10,8 @@ def take_token():
     # currently doesn't work
     auth_url='https://test.api.amadeus.com/v1/security/oauth2/token'
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-    body={f'grant_type=client_credentials&client_id={API_KEY}&client_secret={API_SECRET}'}
+    body = {'grant_type': 'client_credentials', 'client_id': API_KEY, 'client_secret': API_SECRET}
     response = requests.post(url=auth_url,headers=headers, data=body)
     print(response.json())
 
+take_token()
