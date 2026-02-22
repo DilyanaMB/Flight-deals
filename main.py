@@ -1,7 +1,7 @@
 #This file will need to use the DataManager,FlightSearch, FlightData, NotificationManager classes to achieve
 # the program requirements.
 import requests
-import twilio
+from twilio.rest import Client
 API_KEY='FyG4Srx47QoH3KTmCqhEb7GkMpM1FKMd'
 API_SECRET='dT10vDhU4EKqvyzC'
 SHEETY_ENDPOINT = 'https://docs.google.com/spreadsheets/d/10__l6VOu4YQLdRjI6q31kMzbkw6LNQC4bbktnul6dHU/edit?gid=0#gid=0'
